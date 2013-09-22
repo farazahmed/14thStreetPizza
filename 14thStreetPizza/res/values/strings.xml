@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">14th street pizza</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Welcome to 14th street pizza</string>
+    <string name="lblHome">Main Menu</string>
+    <string name="lblOrderPizzaScreen">Order Pizza</string>
+    <string name="strsplashscreendescription">splash screen</string>
+	<string name="mainmenudescription">Main Menu</string>
+	<string name="strorderpizza">Pizza</string>
+	<string name="strordersidelines">SideLines</string>
+	<string name="strorderdrinks">Drinks</string>
+	<string name="strsweetsomething">Sweets</string>
+	<string name="strdeals">Deals</string>
+	<string name="strpanic">Panic</string>
+	<string name="strbtninfo1">Info</string>
+	<string name="strdeveloper">Developer</string>
+	<string name="strcompleteorder">Complete your order</string>
+	<string name="struserinfo">User Info</string>
+	
+	<string name="strpizzaorderslice">Slice</string>
+	<string name="strpizzaorderhalf">Half</string>
+	<string name="strpizzaordersplitthehalf">Split the Half</string>
+	<string name="strpizzaorderhalfandhalf">Half n Half</string>
+	<string name="strpizzaorderfull">Full</string>
+	
+	<string name="strpizzaordersliceprice">(Rs 299)</string>
+	<string name="strpizzaorderhalfprice">(Rs 999)</string>
+	<string name="strpizzaordersplithehalfprice">(Rs 999)</string>
+	<string name="strpizzaorderhalfandhalfprice">(Rs 1799)</string>
+	<string name="strpizzaorderfullprice">(Rs 1799)</string>
+	<string name="strdummyprice">(Rs 1999)</string>
+	<string name="strnext">Next</string>
+	<string name="strsauce">Sauce</string>
+	<string name="strreset">Reset</string>
+	<string name="straddother">Add</string>
+	<string name="strnettotalprice">500</string>
+	<string name="strnettotal">Net Total</string>
+	<string name="strveggies">Veggies</string>
+	<string name="strflavour">Flavour</string>
+	<string name="strbtninfo">Will work as header inside every activity </string>
+	<string name="strslice">Slice</string>
+	<string name="strhalf">Half</string>
+	<string name="strview">View</string>
+	<string name="strchoosearea">Choose a area</string>
+	
+	<string-array name="area_array">
+        <item>Select delivery area</item>
+        <item>Defenece, Phase 1</item>
+        <item>Defenece, Phase 2</item>
+        <item>Defenece, Phase 3</item>
+        <item>Defenece, Phase 4</item>
+        <item>Defenece, Phase 5</item>
+        <item>Defenece, Phase 6</item>
+    </string-array>
+	
+	
+	
+	
+	
+	
+	
+</resources>

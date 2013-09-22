@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".PizzaSizeScreen" >
+	 <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        >
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/header_pizza"
+            android:contentDescription="@string/strbtninfo" />
+
+    </LinearLayout> 
+    
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_centerInParent="true"
+        android:background="#FFAABB" />
+
+    <TableLayout
+        android:id="@+id/tbllayoutslice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fakeView"
+        android:layout_marginBottom="80dp" >
+
+        <!-- just draw a dummy line -->
+
+        <View
+            android:layout_height="0dip"
+            android:background="#FF0000" />
+        <!-- 2 columns  one for check box and other for price -->
+
+        <TableRow
+            android:id="@+id/tableslice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/chkslice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strpizzaorderslice" />
+
+            <TextView
+                android:id="@+id/tvsliceprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strdummyprice"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <Button
+            android:id="@+id/btnslice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strview" /> 
+            
+            
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tbllayouthalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fakeView"
+        android:layout_marginBottom="20dp" >
+
+        <!-- just draw a dummy line -->
+
+        <View
+            android:layout_height="0dip"
+            android:background="#FF0000" />
+
+        <!-- 2 columns  one for check box and other for price -->
+
+        <TableRow
+            android:id="@+id/rowhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/chkhalf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strpizzaorderhalf" />
+
+            <TextView
+                android:id="@+id/tvhalfprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="@string/strdummyprice"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+              <Button
+            android:id="@+id/btnhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strview" /> 
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tbllayoutsplithalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp" >
+
+        <!-- just draw a dummy line -->
+
+        <View
+            android:layout_height="0dip"
+            android:background="#FF0000" />
+        <!-- 2 columns  one for check box and other for price -->
+
+        <TableRow
+            android:id="@+id/rowsplitthehalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/chksplitthehalf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strpizzaordersplitthehalf" />
+
+            <TextView
+                android:id="@+id/tvsplitthehalfprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="@string/strdummyprice"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+              <Button
+            android:id="@+id/btnsplitthehalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strview" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tbllayouthalfandhalf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fakeView"
+        android:layout_marginTop="20dp" >
+
+        <!-- just draw a dummy line -->
+
+        <View
+            android:layout_height="0dip"
+            android:background="#FF0000" />
+        <!-- 2 columns  one for check box and other for price -->
+
+        <TableRow
+            android:id="@+id/rowhalfandhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/chkhalfandhalf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strpizzaorderhalfandhalf" />
+
+            <TextView
+                android:id="@+id/tvhalfandhalf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="@string/strdummyprice"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <Button
+            android:id="@+id/btnhalfnhalf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strview" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tblfull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fakeView"
+        android:layout_marginTop="80dp" >
+
+        <!-- just draw a dummy line -->
+
+        <View
+            android:layout_height="0dip"
+            android:background="#FF0000" />
+        <!-- 2 columns  one for check box and other for price -->
+
+        <TableRow
+            android:id="@+id/rowfull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <CheckBox
+                android:id="@+id/chkfull"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/strpizzaorderfull" />
+
+            <TextView
+                android:id="@+id/tvfull"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1"
+                android:text="@string/strdummyprice"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+              <Button
+            android:id="@+id/btnfull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/strview" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/btnaddanother"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/straddother" />
+
+        <Button
+            android:id="@+id/btnreset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strreset" />
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strsauce" />
+    </LinearLayout>
+
+</RelativeLayout>

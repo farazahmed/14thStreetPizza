@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+  <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/strbtninfo"
+            android:src="@drawable/header_pizza" />
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/fakeView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header"
+        android:background="#AAAAAA" />
+  
+<ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" 
+        android:layout_below="@+id/fakeView"
+        >
+<RelativeLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel"
+    android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:scrollbars="none" >
+
+            <TableLayout
+                android:id="@+id/maintable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*" 
+                android:divider="@drawable/deals"
+             
+			   >
+            </TableLayout>
+        
+		</HorizontalScrollView>
+
+    
+   	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+      	android:layout_alignParentBottom="true"
+      	android:id="@+id/linerlayout"
+     >
+            
+  	<TextView
+            android:id="@+id/tvnettotallabel1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:textSize="20sp"
+    		android:textStyle="bold"
+    		android:layout_marginTop="20dp"
+   			android:layout_marginLeft="5dp"
+   			android:text="@string/strnettotal" 
+	
+	   	/>
+	    
+	<TextView
+            android:id="@+id/tvnettotalprice1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+    		android:text="@string/strnettotalprice" 
+    		android:layout_weight="1"
+    		android:layout_marginTop="20dp"
+			android:textStyle="bold"
+			android:textSize="22sp"
+			
+     />
+    </LinearLayout>	  
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:id="@+id/btnaddanother1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/straddother" />
+
+        <Button
+            android:id="@+id/btnreset1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strreset" />
+
+        <Button
+            android:id="@+id/btnnext1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strnext" />
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

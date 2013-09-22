@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".SplashScreen" >
+    
+    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back2"
+    android:id="@+id/mainsc"
+    >
+    <RelativeLayout 
+  	  android:layout_width="match_parent"
+   	  android:layout_height="wrap_content"
+      android:background="@drawable/back"
+      tools:context=".SplashScreen" >
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        >
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/header_pizza"
+            android:contentDescription="@string/strbtninfo" />
+
+    </LinearLayout>    
+ 
+     <View
+        android:id="@+id/fakeView"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header"
+        android:background="#AAAAAA" />
+    
+    <Button
+        android:id="@+id/btnorderpizza"
+        style="@style/btnstylegenoa"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fakeView"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="@string/strorderpizza" 
+        
+        />
+      <Button
+        android:id="@+id/btnorderslidelines"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnorderpizza"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strordersidelines" />
+    
+    <Button
+        android:id="@+id/btnorderdrinks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+       	android:layout_below="@+id/btnorderslidelines"
+       	style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strorderdrinks" />
+    
+    <Button
+        android:id="@+id/btnordersweets"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:layout_below="@+id/btnorderdrinks"
+        android:text="@string/strsweetsomething" />
+    	
+    <Button
+        android:id="@+id/btnorderdeals"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnordersweets"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strdeals" />
+    
+    <Button
+        android:id="@+id/btnpanic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnorderdeals"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strpanic" />
+    
+    <Button
+        android:id="@+id/btninfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnpanic"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strbtninfo1" />
+    
+        <Button
+        android:id="@+id/btndeveloper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btninfo"
+        android:layout_marginTop="10dp"
+        style="@style/btnstylegenoa"
+        android:textSize="15sp"
+        android:text="@string/strdeveloper" />
+    
+    
+    
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
